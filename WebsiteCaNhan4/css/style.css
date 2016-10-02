@@ -403,7 +403,7 @@ h4, h4.block_title a {
 .shadow_item_khoahoc{
     box-shadow: 2px 4px 18px -3px;
 }
-/*trang dang ky*/
+/*register, login*/
 .colorgraph {
   height: 5px;
   border-top: 0;
@@ -422,3 +422,5 @@ h4, h4.block_title a {
     margin-right: 30px;
     padding-bottom: 30px;
 }
+
+
