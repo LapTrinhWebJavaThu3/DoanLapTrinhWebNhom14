@@ -10,6 +10,8 @@
 	<!-- CSS Riêng -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" href="img/icon.ico" />
+	<!--  Responsive-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- Dong Ho -->
 	<link href="css/datepicker.css" rel="stylesheet">
 	<script src="js/jquery-2.1.4.min.js"></script>
@@ -19,233 +21,316 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700">
 	<script src="jquery/jquery-3.1.0.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			if ($('#back-to-top').length) {
-				var scrollTrigger = 10, // px
-					backToTop = function() {
-						var scrollTop = $(window).scrollTop();
-						if (scrollTop > scrollTrigger) {
-							$('#back-to-top').fadeIn();
-						} else {
-							$('#back-to-top').fadeOut();
-						}
-					};
-				backToTop();
-				$(window).on('scroll', function() {
-					backToTop();
-				});
-				$('#back-to-top').on('click', function(e) {
-					e.preventDefault();
-					$('html,body').animate({
-						scrollTop: 0
-					}, 700);
-				});
-			}
-		});
-	</script>
-
 
 </head>
 
 <body>
 	<div class="container">
-		<!-- Header -->
-		<div id="header" class="row">
-			<div class="col-md-7">
-				<img src="img/logo.jpg" width="150px" height="150px">
-				<div id="name-logo">
-					<h2> WEBSITE CÁ NHÂN </h2>
-					<h3> Hỗ Trợ Việc Giảng Dạy Của Giảng Viên</h3>
-					<h3> Nhóm 14 - LTW Sáng T3 </h3>
+		<!-- HEADER-->
+		<header>
+			<div class="header-topbar">
+				<div class="container">
+					<div class="topbar-left pull-left">
+						<div class="email"><a href=""><i class="topbar-icon fa fa-envelope-o"></i><span>LTW Sáng T3</span></a></div>
+						<div class="hotline"><a href=""><i class="topbar-icon fa fa-phone"></i><span>0909090909</span></a></div>
+
+					</div>
+
+
+					<div class="topbar-right pull-right">
+						<div class="socials">
+							<a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
+						</div>
+						<div class="group-sign-in">
+
+						</div>
+					</div>
+
+
 				</div>
 			</div>
-			<div class="col-md-5">
-				<div id="login" class="col-md-7">
-					<h4 style="color :red"> Xin chào , User </h4>
-				</div>
 
-				<div id="custom-search-input">
-					<div id="search" class="input-group col-md-5">
-						<input type="text" class="  search-query form-control" placeholder="Tìm kiếm" />
-						<span class="input-group-btn">
-							<button class="btn btn-success" type="button">
-								<span class=" glyphicon glyphicon-search"></span>
-						</button>
-						</span>
+			<div class="header-main homepage-01">
+				<div class="container">
+					<div class="header-main-wrapper">
+						<div class="navbar-header">
+							<div class="logo pull-left">
+								<a href="trangchu.html" class="header-logo"><img src="img/logo.png" alt="" /></a>
+							</div>
+							<button type="button" data-toggle="collapse" data-target=".navigation" class="navbar-toggle edugate-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+						</div>
+						<nav class="navigation collapse navbar-collapse pull-right">
+							<ul class="nav-links nav navbar-nav">
+
+								<li class="active"><a href="#" class="main-menu">Trang chủ </a> </li>
+								<li class="dropdown">
+									<a href="#" class="main-menu data-toggle=" dropdown "">Các khóa học <span class="fa fa-angle-down icons-dropdown"></span></a>
+									<ul class="dropdown-menu edugate-dropdown-menu-1">
+										<li>
+											<a href="#" class="link-page">Android</a>
+										</li>
+										<li>
+											<a href=="#" class="link-page">Java</a>
+										</li>
+										<li>
+											<a href=="#" class="link-page">Java</a>
+										</li>
+										<li>
+											<a href=="#" class="link-page">Lập trình web</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class=""><a href="#" class="main-menu">Liên hệ </a></li>
+
+								<li style="margin-left:5em" class=""><a href="#" class="main-menu"> Đăng Nhập </a></li>
+								<li class=""><a href="#" class="main-menu"> Đăng Ký </a></li>
+								<li class="button-search">
+									<p class="main-menu"><i class="fa fa-search"></i></p>
+								</li>
+								<div class="nav-search  hide">
+									<form><input type="text" placeholder="Tìm kiếm" class="searchbox" />
+										<button type="submit" class="searchbutton fa fa-search"></button>
+									</form>
+								</div>
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</div>
-		</div>
+		</header>
 		<!-- End Header -->
 		<!--Content-->
 		<div class="content">
-			<!--Navbar-->
-			<div class="navbar">
-				<nav class="navbar navbar-light" style="background-color: #1B5A96;">
-					<ul class="nav navbar-nav">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Trang Chủ <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Giới thiệu</a>
-						</li>
+			<!--Devide Body-->
+			<div class="content-body">
+				<div class="container">
+					<h1>Bạn đang xem bài giảng </h1>
+					<div id="exTab1">
+						<ul class="nav nav-pills">
+							<li class="active">
+								<a href="#1a" data-toggle="tab">Video</a>
+							</li>
+							<li><a href="#2a" data-toggle="tab">Tài liệu</a>
+							</li>
+							<li><a href="#3a" data-toggle="tab">Bài Tập</a>
+							</li>
+							<li><a href="#4a" data-toggle="tab">Thảo luận</a>
+							</li>
+						</ul>
+					</div>
 
-					</ul>
-				</nav>
-			</div>
-			<!-- End Navbar-->
+					<div class="tab-content clearfix">
+						<div class="tab-pane active" id="1a">
+							<h3> Giới thiệu về JSP</h3>
 
-			<!--Chia Khung-->
-			<div class="container-fluid">
-				<div class="row vdivide">
-					<div class="col-md-9 table-border">
+							<video id="videoarea" controls="controls" poster="" src=""></video>
 
-						<h1>Bạn đang xem bài giảng </h1>
-
-						<div id="exTab1">
-							<ul class="nav nav-pills">
-								<li class="active">
-									<a href="#1a" data-toggle="tab">Video</a>
-								</li>
-								<li><a href="#2a" data-toggle="tab">Tài liệu</a>
-								</li>
-								<li><a href="#3a" data-toggle="tab">Bài Tập</a>
-								</li>
-								<li><a href="#4a" data-toggle="tab">Thảo luận</a>
-								</li>
-							</ul>
-						</div>
-
-						<div class="tab-content clearfix">
-							<div class="tab-pane active" id="1a">
-								<h3> Giới thiệu về JSP</h3>
-
-								<video controls>
-									<source  src="video/intro.mp4" type="video/mp4">
-										Your browser doesn't support HTML5 video tag.
-									</video>
-								<table class="table table-hover">
+							<h2>
+										Danh sách bài giảng
+									</h2>
+							<div class="table-fill">
+								<table class="table table-video table-striped table-hover">
 									<thead>
 										<tr>
-											<th>Tên Bài Giảng</th>
-											<th>Download</th>
-
+											<th>
+												<div>Tên bài</div>
+											</th>
+											<th>
+												<div>Trạng thái</div>
+											</th>
+											<th>
+												<div>Download</div>
+											</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>Giới thiệu về JSP - Servlet</td>
-											<td>-</td>
+											<td movieurl="http://html5videoformatconverter.com/data/images/happyfit2.mp4" moviesposter="http://html5videoformatconverter.com/data/images/screen.jpg">Video 1</td>
+											<td>Tốt</td>
+											<td>Link</td>
 
 										</tr>
 										<tr>
-											<td>Giới thiệu về HTML - CSS</td>
-											<td>-</td>
+											<td movieurl="http://html5videoformatconverter.com/data/images/happyfit2.mp4" moviesposter="http://html5videoformatconverter.com/data/images/screen.jpg">Video 2</td>
+											<td>Tốt</td>
+											<td><a href="pro.rar">Link</a></td>
+
 
 										</tr>
 										<tr>
-											<td>Giới thiệu về Boostrap</td>
-											<td>-</td>
+											<td movieurl="http://html5videoformatconverter.com/data/images/happyfit2.mp4" moviesposter="http://html5videoformatconverter.com/data/images/screen.jpg">Video 3</td>
+											<td>Tốt</td>
+											<td>Link</td>
+
+
+										</tr>
+										<tr>
+											<td movieurl="video/intro.mp4" moviesposter="http://html5videoformatconverter.com/data/images/screen.jpg">Video 4</td>
+											<td>Tốt</td>
+											<td>Link</td>
+
+
+										</tr>
+										<tr>
+											<td movieurl="http://html5videoformatconverter.com/data/images/happyfit2.mp4" moviesposter="http://html5videoformatconverter.com/data/images/screen.jpg">Michael Jones</td>
+											<td>Tốt</td>
+											<td>Link</td>
 
 										</tr>
 									</tbody>
 								</table>
 							</div>
-							<div class="tab-pane" id="2a">
-								<h4>Danh sách tài liệu tham khảo </h4>
-								<a href="#">JSP Servlet</a></br>
-								<a href="#">JSP Servlet</a></br>
-								<a href="#">JSP Servlet</a>
-							</div>
-							<div class="tab-pane" id="3a">
-								<p>Nội dung bài tập</p>
-								<button type="button" class="btn btn-info">Nộp bài tập </button>
-								<button type="button" class="btn btn-info">Làm bài trắc nghiệm </button>
-							</div>
-							<div class="tab-pane" id="4a">
-								<div class="detailBox">
-									<div class="titleBox">
-										<label>Thảo luận</label>
-										<button type="button" class="close" aria-hidden="true">&times;</button>
+
+						</div>
+						<div class="tab-pane" id="2a">
+							<h4>Danh sách tài liệu tham khảo </h4>
+							<a href="#">JSP Servlet</a></br>
+							<a href="#">JSP Servlet</a></br>
+							<a href="#">JSP Servlet</a>
+						</div>
+						<div class="tab-pane" id="3a">
+							<p>Nội dung bài tập</p>
+
+							<input class="btn btn-info" type='button' id='hideshow1' value='Làm bài trắc nghiệm '>
+							<input class="btn btn-info" type='button' id='hideshow2' value='Nộp Bài Tập'>
+
+							<div id='bai-trac-nghiem' class="hide">
+								<div class="panel panel-info">
+									<div class="panel-heading">Câu 1: ..............</div>
+									<div class="panel-body">
+										<div class="radio">
+											<label><input type="radio" name="optradio">A. </label>
+										</div>
+										<div class="radio">
+											<label><input type="radio" name="optradio">B. </label>
+										</div>
+										<div class="radio ">
+											<label><input type="radio" name="optradio">C.</label>
+										</div>
+										<div class="radio ">
+											<label><input type="radio" name="optradio">D.</label>
+										</div>
 									</div>
-									<div class="commentBox">
+									<input class="btn btn-info" type='button' id='hideshow' value='Câu tiếp theo '>
+									<input class="btn btn-info" type='button' id='hideshow' value='Câu trước  '>
+									<input class="btn btn-info pull-right" type='button' id='hideshow' value='Nộp bài'>
+								</div>
+							</div>
 
-										<p class="taskDescription">Bạn đang thảo luận chủ đề</p>
-									</div>
-									<div class="actionBox">
-										<ul class="commentList">
-											<li>
-												<div class="commenterImage">
-													<img src="http://placekitten.com/50/50" />
-												</div>
-												<div class="commentText">
-													<p class="">Cho em hỏi :</p>
 
-												</div>
-											</li>
-											<li>
-												<div class="commenterImage">
-													<img src="http://placekitten.com/45/45" />
-												</div>
-												<div class="commentText">
-													<p class="">Cho em hỏi :
-												</div>
-											</li>
-											<li>
-												<div class="commenterImage">
-													<img src="http://placekitten.com/40/40" />
-												</div>
-												<div class="commentText">
-													<p class="">Cho em hỏi :</p>
 
-												</div>
-											</li>
-										</ul>
-										<form class="form-inline" role="form">
-											<div class="form-group">
-												<input class="form-control" type="text" placeholder="Nhập bình luận" />
-											</div>
-											<div class="form-group">
-												<button class="btn btn-default">Gửi bình luận</button>
-											</div>
-										</form>
+
+								<div id='nop-bai-tap' class="hide">
+									<div class="panel panel-info">
+										<div class="panel-heading">Nộp bài tập</div>
+										<div class="panel-body">
+											<h3> Tên bài nộp </h3>
+											<table class="table">
+												<tbody>
+
+													<tr class="info">
+														<td>Thời gian nộp</td>
+														<td>Thứ 5 ngày .</td>
+
+													</tr>
+													<tr class="success">
+														<td>Đường dẫn</td>
+														<td>
+															<div class="form-group">
+																<label class="sr-only" for="inputfile">File input</label>
+																<input type="file" id="inputfile">
+															</div>
+														</td>
+
+													</tr>
+												</tbody>
+											</table>
+
+
+											<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-send"></span> Nộp bài</button>
+										</div>
+
 									</div>
 								</div>
 							</div>
+
+					<div class="tab-pane" id="4a">
+						<div class="detailBox">
+							<div class="titleBox">
+								<label>Thảo luận</label>
+								<button type="button" class="close" aria-hidden="true">&times;</button>
+							</div>
+							<div class="commentBox">
+
+								<p class="taskDescription">Bạn đang thảo luận chủ đề</p>
+							</div>
+							<div class="actionBox">
+								<ul class="commentList">
+									<li>
+										<div class="commenterImage">
+											<img src="http://placekitten.com/50/50" />
+										</div>
+										<div class="commentText">
+											<p class="">Cho em hỏi :</p>
+
+										</div>
+									</li>
+									<li>
+										<div class="commenterImage">
+											<img src="http://placekitten.com/45/45" />
+										</div>
+										<div class="commentText">
+											<p class="">Cho em hỏi :
+										</div>
+									</li>
+									<li>
+										<div class="commenterImage">
+											<img src="http://placekitten.com/40/40" />
+										</div>
+										<div class="commentText">
+											<p class="">Cho em hỏi :</p>
+
+										</div>
+									</li>
+								</ul>
+								<form class="form-inline" role="form">
+									<div class="form-group">
+										<input class="form-control" type="text" placeholder="Nhập bình luận" />
+									</div>
+									<div class="form-group">
+										<button class="btn btn-default">Gửi bình luận</button>
+									</div>
+								</form>
+							</div>
 						</div>
-
-
-					</div>
-					<div class="col-md-3 col-lg-3 col-md-3 col-sm-3 col-xs-12">
-					
-						<div style="margin-bottom :20px" class="datepicker-here" data-language='en'></div>
 					</div>
 				</div>
-			</div>
 
-			<!--End Chia Khung-->
+
+			</div>
+		</div>
+		<!--End Divide Bodu->
 		</div>
 		<!--End Content-->
 		<!--Footer-->
-		<div id="footer" class="row">
-			<div class="col-md-6">
-				<img style="width:40px;	height:40px;padding: 5px" src="img/logo.jpg"> &copy 2016 - BẢN QUYỀN THUỘC VỀ NHÓM 14 LTW
-			</div>
-			<div class="col-md-6 powered">
-				<a href="" class="btn azm-social azm-size-64 azm-circle azm-long-shadow azm-dribbble"><i class="fa fa-facebook"></i></a>
-				<a href="" class="btn azm-social azm-size-64 azm-circle azm-long-shadow azm-dribbble"><i class="fa fa-youtube"></i></a>
-				<a href="" class="btn azm-social azm-size-64 azm-circle azm-long-shadow azm-dribbble"><i class="fa fa-google-plus"></i></a>
+		<div class="footer" class="row">
+			<div class="container">
+				<div class="col-md-12 text-center">
+					<img style="width:40px;	height:40px;padding: 5px" src="img/logo.jpg"> &copy 2016 - BẢN QUYỀN THUỘC VỀ NHÓM 14 LTW
+				</div>
 
 			</div>
 		</div>
 		<!-- End Footer-->
-
-		<img id="back-to-top" src="img/back-to-top.png">
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<!-- Tích hợp JS của Bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
+	</div>
+	<img id="back-to-top" src="img/back-to-top.png">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Tích hợp JS của Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
