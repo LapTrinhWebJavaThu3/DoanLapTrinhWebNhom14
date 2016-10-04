@@ -438,6 +438,7 @@ header .scroll-nav {
   width: 100%;
   background: #195690;
   color: white;
+  margin-top: 2em;
 }
 .powered {
     text-align: right;
