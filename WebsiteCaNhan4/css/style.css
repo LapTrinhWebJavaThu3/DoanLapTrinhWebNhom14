@@ -2,6 +2,10 @@
     border: 1px solid #fefefe;
     background-color: #FFFFFF;
 }
+.container-fluid{
+    margin: 50px auto;
+}
+
 /*trang dang ky*/
 .colorgraph {
   height: 5px;
