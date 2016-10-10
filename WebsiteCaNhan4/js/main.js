@@ -21,8 +21,7 @@
             });
         }
         // -------------------------------------//
-
-        // SHOW - HIDE - BOX SEARCH ON MENU
+                // SHOW - HIDE - BOX SEARCH ON MENU
         $(".button-search").on('click', function() {
             $(".nav-search").toggleClass('hide');
         });
