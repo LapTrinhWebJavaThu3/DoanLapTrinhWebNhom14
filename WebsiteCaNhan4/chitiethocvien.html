@@ -10,73 +10,90 @@
 	<!-- CSS Riêng -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" href="img/icon.ico" />
-	<!-- Dong Ho -->
-	<link href="css/datepicker.css" rel="stylesheet">
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/datepicker.js"></script>
-	<script src="js/datepicker.en.js"></script>
-	<!-- End DongHo -->
+	
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700">
 	<script src="jquery/jquery-3.1.0.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			if ($('#back-to-top').length) {
-			    var scrollTrigger = 10, // px
-			    backToTop = function () {
-			    	var scrollTop = $(window).scrollTop();
-			    	if (scrollTop > scrollTrigger) {
-			    		$('#back-to-top').fadeIn();
-			    	} else {
-			    		$('#back-to-top').fadeOut();
-			    	}
-			    };
-			    backToTop();
-			    $(window).on('scroll', function () {
-			    	backToTop();
-			    });
-			    $('#back-to-top').on('click', function (e) {
-			    	e.preventDefault();
-			    	$('html,body').animate({
-			    		scrollTop: 0
-			    	}, 700);
-			    });
-			}
-		});
 
-	</script>
 
 
 </head>
 <body>
 	<div class="container">
 		<!-- Header -->
-		<div id="header" class="row">
-			<div class="col-md-7">
-				<img src="img/logo.jpg" width="150px" height="150px">
-				<div id="name-logo">
-					<h2> WEBSITE CÁ NHÂN </h2>
-					<h3> Hỗ Trợ Việc Giảng Dạy Của Giảng Viên</h3>
-					<h3> Nhóm 14 - LTW Sáng T3 </h3>
-				</div>			
-			</div>
-			<div class="col-md-5">
-				<div id="login" class="col-md-7">
-					<h4 style="color :red"> Xin chào , User </h4>	
-				</div>	
+		<header>
+			<div class="header-topbar">
+				<div class="container">
+					<div class="topbar-left pull-left">
+						<div class="email"><a href=""><i class="topbar-icon fa fa-envelope-o"></i><span>LTW Sáng T3</span></a></div>
+						<div class="hotline"><a href=""><i class="topbar-icon fa fa-phone"></i><span>0909090909</span></a></div>
 
-				<div id="custom-search-input">
-					<div id="search" class="input-group col-md-5">
-						<input type="text" class="  search-query form-control" placeholder="Tìm kiếm" />
-						<span class="input-group-btn">
-							<button class="btn btn-success" type="button">
-								<span class=" glyphicon glyphicon-search"></span>
-							</button>
-						</span>
+					</div>
+
+
+					<div class="topbar-right pull-right">
+						<div class="socials">
+							<a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
+						</div>
+						<div class="group-sign-in">
+
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="header-main homepage-01">
+				<div class="container">
+					<div class="header-main-wrapper">
+						<div class="navbar-header">
+							<div class="logo pull-left">
+								<a href="trangchu.html" class="header-logo"><img src="img/logo.png" alt="" /></a>
+							</div>
+							<button type="button" data-toggle="collapse" data-target=".navigation" class="navbar-toggle edugate-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+						</div>
+						<nav class="navigation collapse navbar-collapse pull-right">
+							<ul class="nav-links nav navbar-nav">
+
+								<li class="active"><a href="#" class="main-menu">Trang chủ </a> </li>
+								<li class="dropdown">
+									<a href="#" class="main-menu data-toggle=" dropdown "">Các khóa học <span class="fa fa-angle-down icons-dropdown"></span></a>
+									<ul class="dropdown-menu edugate-dropdown-menu-1">
+										<li>
+											<a href="#" class="link-page">Android</a>
+										</li>
+										<li>
+											<a href=="#" class="link-page">Java</a>
+										</li>
+										<li>
+											<a href=="#" class="link-page">Java</a>
+										</li>
+										<li>
+											<a href=="#" class="link-page">Lập trình web</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class=""><a href="#" class="main-menu">Liên hệ </a></li>
+
+								<li style="margin-left:5em" class=""><a href="#" class="main-menu"> Đăng Nhập </a></li>
+								<li class=""><a href="#" class="main-menu"> Đăng Ký </a></li>
+								<li class="button-search">
+									<p class="main-menu"><i class="fa fa-search"></i></p>
+								</li>
+								<div class="nav-search  hide">
+									<form><input type="text" placeholder="Tìm kiếm" class="searchbox" />
+										<button type="submit" class="searchbutton fa fa-search"></button>
+									</form>
+								</div>
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</div>
-		</div>	
+		</header>
 		<!-- End Header -->
 		<!--Content-->
 		<div class="content">
@@ -105,7 +122,7 @@
 			<!--Chia Khung-->
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-9 table-content">
+					<div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2table-content">
 						<h2>Chi tiết học viên Nguyễn Văn A</h2>
 						<form class="form-horizontal">
 							<div class="form-group">
@@ -163,54 +180,29 @@
 					</div>
 
 			
-					<div class="col-md-3">
-						<div class="row">
-							<div class="col-sm-12 col-md-12">
-								<div class="thumbnail">
-									<img src="img/logo.jpg" alt="avatar">
-									<div class="caption">
-										<div class="list-group">
-											<a href="#" class="list-group-item active">
-												Tên USER
-											</a>
-											<a href="#" class="list-group-item">Khóa Học</a>
-											<a href="#" class="list-group-item">Thông Tin Cá Nhân</a>
-											<a href="#" class="list-group-item">Tin Nhắn</a>
-											<a href="#" class="list-group-item">Đăng Xuất</a>
-										</div>
-
-									</div>
-								</div>
-							</div>
-						</div>
-						<div style="margin-bottom :20px" class="datepicker-here" data-language='en'></div>
-					</div>
+					
 				</div>
 			</div>
 
 			<!--End Chia Khung-->
-		</div>
+
 		<!--End Content-->
 		<!--Footer-->
-		<div id="footer" class="row">
-			<div class="col-md-6">
-				<img style="width:40px;	height:40px;padding: 5px" src="img/logo.jpg">
-				&copy 2016 - BẢN QUYỀN THUỘC VỀ NHÓM 14 LTW
-			</div>
-			<div class="col-md-6 powered">
-				<a href="" class="btn azm-social azm-size-64 azm-circle azm-long-shadow azm-dribbble"><i class="fa fa-facebook"></i></a>
-				<a href="" class="btn azm-social azm-size-64 azm-circle azm-long-shadow azm-dribbble"><i class="fa fa-youtube"></i></a>
-				<a href="" class="btn azm-social azm-size-64 azm-circle azm-long-shadow azm-dribbble"><i class="fa fa-google-plus"></i></a>
-
-			</div>
-		</div>
-		<!-- End Footer-->
-
-		<img id="back-to-top" src="img/back-to-top.png">
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<!-- Tích hợp JS của Bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
+		 <div class="footer" class="row">
+                <div class="container">
+                    <div class="col-md-12 text-center">
+                        <img style="width:40px;	height:40px;padding: 5px" src="img/logo.jpg"> &copy 2016 - BẢN QUYỀN THUỘC VỀ NHÓM 14 LTW
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer-->
+        </div>
+        <img id="back-to-top" src="img/back-to-top.png">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Tích hợp JS của Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
 	</body>
 
 	</html>

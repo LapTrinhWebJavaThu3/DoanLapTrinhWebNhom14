@@ -27,6 +27,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <div class="container">
         <!-- HEADER-->
         <header>
@@ -172,6 +173,113 @@
                                             <div class="form-group">
                                                 <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email" tabindex="2" ng-model="email" autocomplete="off" required>
                                                 <i class="fa fa-check text-success" ng-show="form.email.$dirty && form.email.$valid">
+=======
+	<div class="container">
+		<!-- HEADER-->
+		<header>
+			<div class="header-topbar">
+				<div class="container">
+					<div class="topbar-left pull-left">
+						<div class="email"><a href=""><i class="topbar-icon fa fa-envelope-o"></i><span>LTW Sáng T3</span></a></div>
+						<div class="hotline"><a href=""><i class="topbar-icon fa fa-phone"></i><span>0909090909</span></a></div>
+
+					</div>
+
+
+					<div class="topbar-right pull-right">
+						<div class="socials">
+							<a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
+						</div>
+						<div class="group-sign-in">
+
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="header-main homepage-01">
+				<div class="container">
+					<div class="header-main-wrapper">
+						<div class="navbar-header">
+							<div class="logo pull-left">
+								<a href="trangchu.html" class="header-logo"><img src="img/logo.png" alt="" /></a>
+							</div>
+							<button type="button" data-toggle="collapse" data-target=".navigation" class="navbar-toggle edugate-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+						</div>
+						<nav class="navigation collapse navbar-collapse pull-right">
+							<ul class="nav-links nav navbar-nav">
+
+								<li class="active"><a href="#" class="main-menu">Trang chủ </a> </li>
+								<li class="dropdown">
+									<a href="#" class="main-menu data-toggle=" dropdown "">Các khóa học <span class="fa fa-angle-down icons-dropdown"></span></a>
+									<ul class="dropdown-menu edugate-dropdown-menu-1">
+										<li>
+											<a href="#" class="link-page">Android</a>
+										</li>
+										<li>
+											<a href=="#" class="link-page">Java</a>
+										</li>
+										<li>
+											<a href=="#" class="link-page">Java</a>
+										</li>
+										<li>
+											<a href=="#" class="link-page">Lập trình web</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class=""><a href="#" class="main-menu">Liên hệ </a></li>
+
+								<li style="margin-left:5em" class=""><a href="#" class="main-menu"> Đăng Nhập </a></li>
+								<li class=""><a href="#" class="main-menu"> Đăng Ký </a></li>
+								<li class="button-search">
+									<p class="main-menu"><i class="fa fa-search"></i></p>
+								</li>
+								<div class="nav-search  hide">
+									<form><input type="text" placeholder="Tìm kiếm" class="searchbox" />
+										<button type="submit" class="searchbutton fa fa-search"></button>
+									</form>
+								</div>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End Header -->
+		<!--Content-->
+		<div class="content">
+			<!--Devide Body-->
+			<div class="content-body">
+				<div class="container">
+					<div class="col-md-12">
+						<div id="main" ng-app="demoApp" ng-controller="RegisterCtrl">
+
+							<div class="col-xs-12 col-sm-6 col-md-6 col-sm-offset-2 col-md-offset-2">
+								<form role="form" class="form-horizontal" name="form" ng-submit="register()" novalidate>
+									<h2 style="color: blue; font-weight: bold;">Đăng ký</h2>
+									<hr class="colorgraph">
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-12">
+											<div class="form-group">
+												<div ng-show="success" class="text-success text-center">Đăng ký thành viên thành công !</div>
+												<input type="text" name="fullname" id="fullname" class="form-control input-lg" placeholder="Họ và tên" tabindex="1" ng-model="fullname" ng-minlength="6" ng-maxlength="50" ng-pattern="/^[a-zA-Z, ]+$/" required>
+												<i class="fa fa-check text-success" ng-show="form.fullname.$dirty && form.fullname.$valid"></i>
+												<div ng-show="form.fullname.$dirty && form.fullname.$invalid" class="text-danger"><i class="fa fa-times text-danger"></i>
+													<span ng-show="form.fullname.$error.required">Họ tên không được bỏ trống</span>
+													<span ng-show="form.fullname.$error.minlength">Họ tên phải dài hơn 6 kí tự</span>
+													<span ng-show="form.fullname.$error.maxlength">Họ tên phải ngắn hơn 50 kí tự</span>
+													<span ng-show="form.fullname.$error.pattern">Họ tên chỉ bao gồm các kí tự chữ cái</span>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email" tabindex="2" ng-model="email" autocomplete="off" required>
+												<i class="fa fa-check text-success" ng-show="form.email.$dirty && form.email.$valid">
+>>>>>>> origin/master
 </i>
                                                 <!--Dấu check thể hiện việc nhập dữ liệu được nhập là hợp lệ-->
 
