@@ -415,20 +415,19 @@ header .scroll-nav {
     bottom: :-80px;
 }*/
 #user{
-    padding:25px;
+  margin-top: 25px;
     position: :absolute;
-    width: 200px;   
-    bottom: :-80px;
+
+    width: 190px;   
+ 
 }
 /*thongbao*/
 #thongbao{
-    padding:5px;
-/*    position: :absolute;*/
-  /*  width: 40px;*/
-    /*margin: 10px;*/
-   color: red;   
-    /*bottom: :-30px;*/
-    margin-top: 30px;
+
+padding:5px;
+color: red;
+margin-top: 35px;
+
 
 
 }
