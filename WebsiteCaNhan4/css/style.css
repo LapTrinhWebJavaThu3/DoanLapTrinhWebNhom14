@@ -1,5 +1,5 @@
 .container {
-    border: 1px solid #fefefe;
+    border: 1px somain-menud #fefefe;
     background-color: #FFFFFF;
 }
 .container-fluid{
@@ -397,7 +397,41 @@ header .scroll-nav {
 
 /*End header*/
 
+/*search*/
 
+.navbar-form{
+    padding:30px;
+    position: :absolute;
+    width: 350px;
+    bottom: :-80px;
+}
+
+/*user*/
+
+/*.pull-right{
+    padding:30px;
+    position: :absolute;
+    width: 350px;
+    bottom: :-80px;
+}*/
+#user{
+    padding:25px;
+    position: :absolute;
+    width: 200px;   
+    bottom: :-80px;
+}
+/*thongbao*/
+#thongbao{
+    padding:5px;
+/*    position: :absolute;*/
+  /*  width: 40px;*/
+    /*margin: 10px;*/
+   color: red;   
+    /*bottom: :-30px;*/
+    margin-top: 30px;
+
+
+}
 /*Navbar Search*/
 
 .nav-search {
@@ -1023,4 +1057,21 @@ h4, h4.block_title a {
   height: 2.5em;
   padding: 0.5em;
 }
-/**/
+/* Trang Nop bai*/
+.upload-drop-zone {
+  height: 200px;
+  border-width: 2px;
+  margin-bottom: 20px;
+}
+
+.upload-drop-zone {
+  color: #ccc;
+  border-style: dashed;
+  border-color: #ccc;
+  line-height: 200px;
+  text-align: center
+}
+.upload-drop-zone.drop {
+  color: #222;
+  border-color: #222;
+}

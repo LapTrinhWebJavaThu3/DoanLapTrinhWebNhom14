@@ -118,6 +118,9 @@
 							</li>
 							<li><a href="#4a" data-toggle="tab">Thảo luận</a>
 							</li>
+							<!--Dành cho Giảng Viên-->
+							<li><a href="#5a" data-toggle="tab">Thông báo</a>
+							</li>
 						</ul>
 					</div>
 
@@ -218,10 +221,6 @@
 									<input class="btn btn-info pull-right" type='button' id='hideshow' value='Nộp bài'>
 								</div>
 							</div>
-
-
-
-
 								<div id='nop-bai-tap' class="hide">
 									<div class="panel panel-info">
 										<div class="panel-heading">Nộp bài tập</div>
@@ -306,7 +305,42 @@
 							</div>
 						</div>
 					</div>
-				</div>
+
+					<div class="tab-pane" id="5a">
+						<div class="detailBox">
+							<div class="titleBox">
+								<label>Thông báo</label>
+							</div>
+							<div class="commentBox">
+
+								<p class="taskDescription">Các thông báo trước: </p>
+								<br><br><br>
+							</div>
+						</div>
+						<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#taothongbao">Tạo thông báo</button>
+					  <div id="taothongbao" class="collapse">
+							<form>
+								<div class="form-group">
+					 			<label for="tenthongbao">Tên Thông Báo:</label>
+					 			<input type="text" class="form-control" id="tenthongbao">
+								</div>
+								<div class="form-group">
+					 			<label for="noidungthongbao">Nội Dung Thông Báo:</label>
+								<textarea type="text" class="form-control" rows="10" id="noidungthongbao"></textarea>
+								</div>
+		 					</form>
+							<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#guithongbao">Gửi Thông Báo</button>
+
+						  <!-- Modal -->
+						  <div class="modal fade" id="guithongbao" role="dialog">
+						    <div class="modal-dialog">
+									<div class="alert alert-success">
+								    <strong>Thành công!</strong> Thông báo của bạn đã được đăng.
+								  </div>
+						    </div>
+						  </div>
+					  </div>
+					</div>
 
 
 			</div>
