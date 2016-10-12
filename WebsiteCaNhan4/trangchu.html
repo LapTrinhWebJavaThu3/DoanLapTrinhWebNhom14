@@ -97,8 +97,8 @@
 
 								<li class=""><a href="#" class="main-menu">Liên hệ </a></li>
 
-								<li style="margin-left:5em" class=""><a href="Tichdangnhap.html" class="main-menu"> Đăng Nhập </a></li>
-								<li class=""><a href="trangdangky.html" class="main-menu"> Đăng Ký </a></li>
+								<li><button type="button" class="btn" data-toggle="modal" data-target=".loginModal"><u style = "color: blue">Đăng nhập</u></button></li>
+								<li><button type="button" class="btn" data-toggle="modal" data-target=".registerModal"><u style = "color: blue">Đăng ký</u></button></li>
 								<li class="button-search">
 									<p class="main-menu"><i class="fa fa-search"></i></p>
 								</li>
@@ -161,6 +161,70 @@
 			<!--Devide Body-->
 			<div class="content-body">
 				<div class="container">
+					
+			<!--LOGİN MODAL -->
+			<div class="modal fade loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
+				<div class="modal-dialog modal-sm" role="document">					
+					
+					<form class="login">
+						<div class="text-center"><img src="img/logo.jpg" width="100" alt=""></div>
+						<div class="form-group">
+							<label for="inputUsername"></label>
+							<input type="name" class="loginstyle" id="inputUsername" placeholder=" Tên đăng nhập" style="font-family:Arial, FontAwesome">
+						</div>
+						<div class="form-group">
+							<label for="inputPassword"></label>
+							<input type="password" class="loginstyle" id="inputPassword" placeholder=" Mật khẩu" style="font-family:Arial, FontAwesome">
+						</div>
+						
+						<div class="text-center">
+							<button type="submit" class="btn btn-danger btn-lg ">Đăng nhập</button>
+						</div>
+					</form>
+					
+				</div>
+			</div>
+			
+			<!--REGİSTER MODAL -->
+			<div class="modal fade registerModal" tabindex="-1" role="dialog" aria-labelledby="RegisterModal">
+				<div class="modal-dialog modal-sm" role="document">
+					
+					
+					<form class="login col-md-12" id="register">
+						<div class="text-center"><img src="img/logo.jpg" width="100" alt=""></div>
+						<div class="pull-left inputRegister">
+							
+							<div class="form-group">
+								<label for="inputRegisterUsername"></label>
+								<input type="name" class="registerstyle" min="1" max="5" id="inputRegisterUsername"  placeholder=" Tên đăng nhập" style="font-family:Arial, FontAwesome">
+							</div>
+							
+							<div class="form-group">
+								<label for="inputRegisterPasswordConfirm"></label>
+								<input type="password" class="registerstyle" min="5" max="10"  id="inputRegisterPasswordConfirm"  placeholder=" Mật khẩu" style="font-family:Arial, FontAwesome">
+							</div>
+						</div>
+						<div class="inputRegister">
+							
+							<div class="form-group">
+								<label for="inputRegisterNumberphone"></label>
+								<input type="text" class="registerstyle" min="5" max="10"  id="inputRegisterNumberphone"  placeholder=" Số điện thoại" style="font-family:Arial, FontAwesome">
+							</div>
+							<div class="form-group">
+								<label for="inputRegisterEmail"></label>
+								<input type="e-mail" class="registerstyle"  id="inputRegisterEmail"  placeholder=" Địa chỉ email " style="font-family:Arial, FontAwesome">
+							</div>
+						</div>
+						
+						
+						<div class="text-center">
+							<button type="submit" class="btn btn-danger btn-lg ">Đăng ký</button>
+						</div>
+					</form>
+					
+						</div>
+					</div>
+
 					<ul class="pagination">
 						<div class="row">
 							<h2 style="text-align: center; font-weight: bold ; color: red"> DANH SÁCH KHÓA HỌC</h2>
