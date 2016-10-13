@@ -20,33 +20,6 @@
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700">
 	<script src="jquery/jquery-3.1.0.js"></script>
 
-	<script type="text/javascript">
-		$(document).ready(function(){
-			if ($('#back-to-top').length) {
-			    var scrollTrigger = 10, // px
-			    backToTop = function () {
-			    	var scrollTop = $(window).scrollTop();
-			    	if (scrollTop > scrollTrigger) {
-			    		$('#back-to-top').fadeIn();
-			    	} else {
-			    		$('#back-to-top').fadeOut();
-			    	}
-			    };
-			    backToTop();
-			    $(window).on('scroll', function () {
-			    	backToTop();
-			    });
-			    $('#back-to-top').on('click', function (e) {
-			    	e.preventDefault();
-			    	$('html,body').animate({
-			    		scrollTop: 0
-			    	}, 700);
-			    });
-			}
-		});
-
-	</script>
-
 	
 </head>
 <body>
@@ -118,21 +91,6 @@
 		<!-- End Header -->
 		<!--Content-->
 		<div class="content">
-			<!--Navbar-->
-			<div class="navbar">
-				<nav class="navbar navbar-light" style="background-color: #1B5A96;">
-					<ul class="nav navbar-nav">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Trang Chủ <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Giới thiệu</a>
-						</li>
-
-					</ul>
-				</nav>
-			</div>
-			<!-- End Navbar-->
 
 			<!--Chia Khung-->
 			<div class="container-fluid">
