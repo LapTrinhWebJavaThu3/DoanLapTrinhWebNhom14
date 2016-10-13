@@ -678,7 +678,32 @@ h1.content-title {
     margin-bottom: 20px;
     font-family: 'Open Sans', sans-serif!important;
 }
+/*footer*/
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 280px;
+  background:
+  /* color overlay */ 
+    linear-gradient(
+      rgba(240, 212, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
 
+}
+
+
+/* Custom footer CSS
+-------------------------------------------------- */
+
+.container .text-muted {
+  margin: 20px 0;
+}
+.footertext {
+  color: #ffffff;
+}
 
 /*Compose*/
 
