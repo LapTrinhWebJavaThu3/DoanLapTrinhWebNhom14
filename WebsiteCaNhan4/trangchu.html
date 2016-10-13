@@ -73,15 +73,25 @@
 							</div>
 							<button type="button" data-toggle="collapse" data-target=".navigation" class="navbar-toggle edugate-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
 						</div>
+						 <div class="col-sm-3 col-md-3">
+					        <form class="navbar-form" role="search">
+					        <div class="input-group">
+					            <input type="text" class="form-control" placeholder="Search" name="q">
+					            <div class="input-group-btn">
+					                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+					            </div>
+					        </div>
+					        </form>
+					    </div>
 						<nav class="navigation collapse navbar-collapse pull-right">
 							<ul class="nav-links nav navbar-nav">
 
-								<li class="active"><a href="#" class="main-menu">Trang chủ </a> </li>
+								<li class="active"><a href="trangchu.html" class="main-menu">Trang chủ </a> </li>
 								<li class="dropdown">
 									<a href="#" class="main-menu data-toggle=" dropdown "">Các khóa học <span class="fa fa-angle-down icons-dropdown"></span></a>
 									<ul class="dropdown-menu edugate-dropdown-menu-1">
 										<li>
-											<a href="#" class="link-page">Android</a>
+											<a href="trangdangkykhoahoc.html" class="link-page">Lập trình web</a>
 										</li>
 										<li>
 											<a href=="#" class="link-page">Java</a>
@@ -90,23 +100,16 @@
 											<a href=="#" class="link-page">Java</a>
 										</li>
 										<li>
-											<a href=="#" class="link-page">Lập trình web</a>
+											<a href=="#" class="link-page">Android</a>
 										</li>
 									</ul>
 								</li>
 
-								<li class=""><a href="#" class="main-menu">Liên hệ </a></li>
+								<li class=""><a href="tranglienhe.html" class="main-menu">Liên hệ </a></li>
 
-								<li style="margin-left:5em" class=""><a href="Tichdangnhap.html" class="main-menu"> Đăng Nhập </a></li>
-								<li class=""><a href="trangdangky.html" class="main-menu"> Đăng Ký </a></li>
-								<li class="button-search">
-									<p class="main-menu"><i class="fa fa-search"></i></p>
-								</li>
-								<div class="nav-search  hide">
-									<form><input type="text" placeholder="Tìm kiếm" class="searchbox" />
-										<button type="submit" class="searchbutton fa fa-search"></button>
-									</form>
-								</div>
+								<li><button type="button" id="btnd" class="btn" data-toggle="modal" data-target=".loginModal"><u style = "color: blue">Đăng nhập</u></button></li>
+								<li><button type="button" id="btnd" class ="btn" data-toggle="modal" data-target=".registerModal"><u style = "color: blue">Đăng ký</u></button></li>
+								
 							</ul>
 						</nav>
 					</div>
@@ -161,6 +164,72 @@
 			<!--Devide Body-->
 			<div class="content-body">
 				<div class="container">
+					
+			<!--LOGİN MODAL -->
+			<div class="modal fade loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
+				<div class="modal-dialog modal-sm" role="document">					
+					
+					<form class="login">
+						<div class="text-center"><img src="img/logo.jpg" width="100" alt=""></div>
+						<div class="form-group">
+							<label for="inputUsername"></label>
+							<input type="name" class="loginstyle" id="inputUsername" placeholder=" Tên đăng nhập" style="font-family:Arial, FontAwesome">
+						</div>
+						<div class="form-group">
+							<label for="inputPassword"></label>
+							<input type="password" class="loginstyle" id="inputPassword" placeholder=" Mật khẩu" style="font-family:Arial, FontAwesome">
+						</div>
+						
+						<div class="text-center">
+							<a  href="trangdanhsachkhoahoccuatui.html" type="submit" class="btn btn-danger btn-lg active" role="button" aria-pressed="true" >Đăng nhập</a>						
+						</div>
+						
+					</form>
+					
+				</div>
+			</div>
+			
+			<!--REGİSTER MODAL -->
+			<div class="modal fade registerModal" tabindex="-1" role="dialog" aria-labelledby="RegisterModal">
+				<div class="modal-dialog modal-sm " role="document">
+					
+					
+					<form class="login col-md-12 " id="register">
+						<div class="text-center"><img src="img/logo.jpg" width="100" alt=""></div>
+						<div class="pull-left inputRegister">
+							
+							<div class="form-group">
+								<label for="inputRegisterUsername"></label>
+								<input type="name" class="registerstyle" min="1" max="5" id="inputRegisterUsername"  placeholder=" Tên đăng nhập" style="font-family:Arial, FontAwesome">
+							</div>
+							
+							<div class="form-group">
+								<label for="inputRegisterPasswordConfirm"></label>
+								<input type="password" class="registerstyle" min="5" max="10"  id="inputRegisterPasswordConfirm"  placeholder=" Mật khẩu" style="font-family:Arial, FontAwesome">
+							</div>
+						</div>
+						<div class="inputRegister">
+							
+							<div class="form-group">
+								<label for="inputRegisterNumberphone"></label>
+								<input type="text" class="registerstyle" min="5" max="10"  id="inputRegisterNumberphone"  placeholder=" Số điện thoại" style="font-family:Arial, FontAwesome">
+							</div>
+							<div class="form-group">
+								<label for="inputRegisterEmail"></label>
+								<input type="e-mail" class="registerstyle"  id="inputRegisterEmail"  placeholder=" Địa chỉ email " style="font-family:Arial, FontAwesome">
+							</div>
+						</div>
+						
+						
+						<div class="text-center">					
+							<a  href="trangchu.html" type="submit" class="btn btn-danger btn-lg active" role="button" aria-pressed="true" >Đăng nhập</a>					
+					
+						</div>
+					</form>
+					
+						</div>
+					</div>
+
 					<ul class="pagination">
 						<div class="row">
 							<h2 style="text-align: center; font-weight: bold ; color: red"> DANH SÁCH KHÓA HỌC</h2>
@@ -169,17 +238,17 @@
 								<li class="col-md-3 clear4">
 									<div class="block courseitem">
 										<div class="block_media">
-											<a href="#"><img src="img/jsp-servlet.jpg" height="150" width="300"></a>
+											<a href="trangdangkykhoahoc.html"><img src="img/jsp-servlet.jpg" height="150" width="300"></a>
 											<div class="avatar-list">
 												<div class="hinhgiangvien"><img src="img/jsp-servlet.jpg" class="avatar-course" alt="Profile Photo" width="32" height="32"></div>
 												<div class="tongbaihoc">71 bài học</div>
 												<div class="thoiluongvideo">Video 16 giờ 10 phút</div>
-												<a href="#" class="btn-info xemngaykhoahoc showbuttontrangchu">Xem ngay</a>
+												<a href="trangdangkykhoahoc.html" class="btn-info xemngaykhoahoc showbuttontrangchu">Xem ngay</a>
 											</div>
 										</div>
 
 										<div class="block_content">
-											<h4 class="block_title"><a href="#" title="Cốt lõi Java Web JSP-SERVLET core qua dự án Web Học Toeic trực tuyến">Java Web JSP-SERVLET</a></h4>
+											<h4 class="block_title"><a href="trangdangkykhoahoc.html" title="Java Web JSP-SERVLET">Java Web JSP-SERVLET</a></h4>
 
 											<div class="item-instructor">
 												<img src="img/logo.jpg" class="avatar-course " alt="Profile Photo" height="32" width="32">
@@ -316,6 +385,7 @@
 										</div>
 								</li>
 
+
 							</ul>
 							</div>
 							<li><a href="#">1</a></li>
@@ -331,15 +401,46 @@
 					</div>
 					<!--End Divide Bodu->
 		
-		<!--End Content-->
+					<!--End Content-->
 					<!--Footer-->
 
 					
 					<div class="footer" class="row">
 						<div class="container">
-							<div class="col-md-12 text-center">
-								<img style="width:40px;	height:40px;padding: 5px" src="img/logo.jpg"> &copy 2016 - BẢN QUYỀN THUỘC VỀ NHÓM 14 LTW
-							</div>
+						 <div id="contact" class="container-fluid bg-grey">
+						 
+						  <div class="row">
+						    <div class="col-sm-5">
+						      <h3>Lập trình Web Nhóm 14</h3>
+						      <br>
+						      <p><span class="glyphicon glyphicon-map-marker"></span> Võ Văn Ngân, Q.Thủ Đức, TP.HCM</p>
+						      <p><span class="glyphicon glyphicon-phone"></span>0909090909</p>
+						      <p><span class="glyphicon glyphicon-envelope"></span> pilu15051996@gmail.com</p>
+						    </div>
+						    <div class="col-sm-7 slideanim">
+						      <div class="row">
+						        <div class="col-sm-6 form-group">
+						          <input class="form-control" id="name" name="name" placeholder="Tên" type="text" required>
+						        </div>
+						        <div class="col-sm-6 form-group">
+						          <input class="form-control" id="email" name="email" placeholder="Địa chỉ email" type="email" required>
+						        </div>
+						      </div>
+						      <textarea class="form-control" id="comments" name="comments" placeholder="Nội dung" rows="5"></textarea><br>
+						      <div class="row">
+						        <div class="col-sm-12 form-group">
+						          <button class="btn btn-default pull-right" type="submit">Gởi</button>
+						        </div>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<img id="googleMap" style="height:auto;width:100%;" src = "img/map.PNG" alt = "">
+
+						<div class="col-md-12 text-center">
+							<img style="width:40px;	height:40px;padding: 5px" src="img/logo.jpg"> &copy 2016 - BẢN QUYỀN THUỘC VỀ NHÓM 14 LTW
+						</div>
 
 						</div>
 					</div>
@@ -351,6 +452,8 @@
 					<!-- Tích hợp JS của Bootstrap -->
 					<script src="js/bootstrap.min.js"></script>
 					<script src="js/main.js"></script>
+
+
 </body>
 
 </html>
