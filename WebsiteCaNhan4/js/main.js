@@ -62,9 +62,12 @@
 
     $('#hideshow1').on('click', function(event) {
          $('#bai-trac-nghiem').toggleClass('show');
+       
     });
     $('#hideshow2').on('click', function(event) {
          $('#nop-bai-tap').toggleClass('show');
+                 
+
     });
 
     //  Form Validation
