@@ -40,7 +40,7 @@
 <body>
   <div class="container">
    <!-- Header -->
-   <header>
+     <header>
     <div class="header-topbar" style="background-color: #195690;">
         <div class="container">
           <div class="topbar-left pull-left">
@@ -118,7 +118,6 @@
   </div><!-- /container -->
 
 </header>
-<!-- /Header -->
 
 <!-- Main -->
 <div class="container">
@@ -144,7 +143,7 @@
 
       <div class="col-lg-3 col-md-6 col-xs-12" >
         <div class="panel panel-default text-center" style="background-color: #f5fffa">        
-         <a href="#" >
+         <a href="trangthongbao.html" >
               <i class="fa fa-bell-o  fa-5x" style="color: #0000cd"></i>           
             <br>
             <br>
@@ -183,8 +182,8 @@
 
       <div class="col-lg-3 col-md-6 col-xs-12" >
         <div class="panel panel-default text-center" style="background-color: #fff8dc">        
-         <a href="#" >
-              <i class="fa fa-bell-o  fa-5x" style="color: orange"></i>           
+         <a href="trangquanlytaikhoanGV.html" >
+              <i class="fa fa-user fa-5x" style="color: orange"></i>           
             <br>
             <br>
            <div class="panel-title" style="color: #ff7f50; font-weight: bold;">
@@ -193,12 +192,139 @@
            </a>      
         </div>        
       </div>
+
+      <div class="row">
+        <div class="col-md-7">
+           <div class="panel panel-default">
+            <div class="panel-heading" style="background-color: #fff0f5">
+                <div class="panel-title" style="color: red;font-weight: bold;font-size: 50">Danh sách các bài tập đã nộp</div>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6" style=" margin-top: 20px">
+                       <div class="btn-group show-on-hover">
+                          <button type="button" class="btn btn-success dropdown-toggle " data-toggle="dropdown">
+                            Khóa học <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Lập trình web</a></li>
+                            <li><a href="#">Nhập môn lập trình</a></li>
+                            <li><a href="#">Thiết kế web</a></li>
+                            
+                          </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-6">                 
+                          <div class="form-group">
+                            <input type="text" name="q" class="form-control" placeholder="Tìm kiếm">
+                          </div>                         
+                    </div>
+                </div>
+                <table class="table table-striped">
+                        <thead>
+                      <tr>
+                          <th>Tên bài tập</th>
+                          <th>Tên học viên</th>
+                          <th>Thời gian nộp</th>
+                          <th>Chi tiết</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>Lập trình web</td>
+                          <td>Trần Thị Thơm</td>
+                          <td>16:00 7/5/2016</td>
+                          <td>
+                            <button class="btn btn-warning btn-xs"><a href="trangchitietbainop.html"><span class="glyphicon glyphicon-pencil"></span></a></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Cơ sở dữ liệu</td>
+                          <td>Huỳnh Nhật Thành</td>
+                          <td>20:15 6/7/2016</td>
+                           <td>
+                            <button class="btn btn-warning btn-xs"><a href="trangchitietbainop.html"><span class="glyphicon glyphicon-pencil"></span></a></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Nhập môn lập trình</td>
+                          <td>Phạm Lê Minh</td>
+                          <td>23:00 4/5/2016</td>
+                           <td>
+                            <button class="btn btn-warning btn-xs"><a href="trangchitietbainop.html"><span class="glyphicon glyphicon-pencil"></span></a></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Kỹ thuật lập trình</td>
+                          <td>Phạm Trường Giang</td>
+                          <td>15:50 5/5/2016</td>
+                           <td>
+                            <button class="btn btn-warning btn-xs"><a href="trangchitietbainop.html"><span class="glyphicon glyphicon-pencil"></span></a></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Cấu trúc dữ liệu</td>
+                          <td>Lê Minh Thương</td>
+                          <td>9:00 5/7/2016</td>
+                           <td>
+                            <button class="btn btn-warning btn-xs"><a href="trangchitietbainop.html"><span class="glyphicon glyphicon-pencil"></span></a></button>
+                          </td>
+                        </tr>
+                    </tbody>
+                      </table>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-5">
+           <div class="panel panel-default">
+            <div class="panel-heading" style="background-color: #e0ffff">
+                <div class="panel-title" style="color:blue; font-weight: bold;font-size: 50">Thảo luận</div>
+            </div>
+            <div class="panel-body">
+                <div class="input-group">
+                  <input type="text" id="userComment" class="form-control input-sm chat-input" placeholder="Write your message here..." />
+                  <span class="input-group-btn" onclick="addComment()">     
+                      <a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"></span> Add Comment</a>
+                  </span>
+                </div>
+                <hr data-brackets-id="12673">
+                <ul data-brackets-id="12674" id="sortable" class="list-unstyled ui-sortable">
+                <strong class="pull-left primary-font">Thơm</strong>
+                <small class="pull-right text-muted">
+                   <span class="glyphicon glyphicon-time"></span>7 mins ago</small>
+                </br>
+                <li class="ui-state-default">Cho em hỏi để làm ra một trang Web em cần học những gì ạ? </li>
+                </br>
+                 <strong class="pull-left primary-font">Thành</strong>
+                <small class="pull-right text-muted">
+                   <span class="glyphicon glyphicon-time"></span>14 mins ago</small>
+                </br>
+                <li class="ui-state-default">Chào Thầy! </li>
+
+                <hr>
+                <p><a href="">Danh sách thảo luận tuần 1 - chủ đề thiết kế web</a></p>
+                <p><a href="">Danh sách thảo luận tuần 2- chủ đề JSP Servlet</a></p>
+                
+            </ul>
+            </div>
+        </div>
+        </div>
+      </div>
+      </div>
+
+
       </div>
       </div>
     </div>
   </div>
      
-
+ <img id="back-to-top" src="img/back-to-top.png">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Tích hợp JS của Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
