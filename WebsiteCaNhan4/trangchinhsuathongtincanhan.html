@@ -204,7 +204,8 @@
 
                             <!-- Text input-->
                             <div class="form-group">
-                                <label class="col-md-4 control-label" for="Phone number ">Số điện thoại </label>  
+                                <label class="col-md-4 control-label" for="Phone number ">Số điện thoại </label> 
+                              
                                 <div class="col-md-4">
                                     <div class="input-group">
                                         <div class="input-group-addon">
@@ -246,7 +247,7 @@
                             <div class="form-group">
                               <label class="col-md-4 control-label" ></label>  
                               <div class="col-md-4">
-                              <a href="#" class="btn btn-success"><span class="glyphicon glyphicon-thumbs-up"></span>Thay đổi</a>
+                              <a href="#" class="btn btn-success" id ="contactbtn"><span class="glyphicon glyphicon-thumbs-up"></span>Thay đổi</a>
                               <a href="#" class="btn btn-danger" value=""><span class="glyphicon glyphicon-remove-sign"></span>Xóa</a>                               
                               </div>
                             </div>
@@ -315,6 +316,49 @@
                     <!-- Tích hợp JS của Bootstrap -->
                     <script src="js/bootstrap.min.js"></script>
                     <script src="js/main.js"></script>
+
+<script>
+  function validateText(id)
+    {
+  
+      
+      if($("#"+id).val() == null || $("#"+id).val() == "")
+      {
+        var div = $("#"+id).closest("div");
+        div.removeClass("has-success");       
+        $("glypcn"+id).remove();
+        div.addClass("has-error has-feedback")
+        div.append('<span id="glypcn'+id+'" class="glyphicon glyphicon-remove form-control-feedback"></span>');
+        return false;
+      }
+      else
+      {
+        var div = $("#"+id).closest("div");
+        div.removeClass("has-error");
+        div.addClass("has-success has-feedback");
+        $("glypcn"+id).remove();
+        div.append('<span id="glypcn'+id+'" class="glyphicon glyphicon-ok form-control-feedback"></span>');
+        return true;
+
+      }
+
+    }
+
+      $(document).ready(
+        function()
+        {
+          $("#contactbtn").click(function()
+          {
+            validateText("Phone number");
+
+          });
+        }
+
+        );
+    </script>
+
 </body>
+
+
 
 </html>

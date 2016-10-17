@@ -714,9 +714,9 @@
                       <h4 class="modal-title">Bài tập</h4>
                     </div>
                     <div class="modal-body">
-                        <div class="form-group">
-                          <label for="usr">Tên bài tập:</label>
-                          <input type="text" class="form-control" id="usr">
+                        <div class="form-group has-feedback">
+                          <label for="nameBT">Tên bài tập:</label>
+                          <input type="text" class="form-control" id="nameBT">
                         </div>
                         <div class="form-group">
                           <label for="nd">Nội dung:</label>
@@ -730,6 +730,7 @@
 
                     </div>
                     <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal" id = "contactbtn">Save</button>
                     <button type="button" class="btn btn-success" data-dismiss="modal">Đóng</button>
                     </div>
                   </div>
@@ -766,7 +767,7 @@
 
                     </div>
                     <div class="modal-footer">
-                     <button type="button" class="btn btn-danger" data-dismiss="modal">Save</button>
+                   
                       <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
                     </div>
                   </div>
@@ -1204,6 +1205,48 @@
     <!-- Tích hợp JS của Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+      
+    function validateText(id)
+    {
+      alert(id);
+      
+      if($("#"+id).val() == null || $("#"+id).val() == "")
+      {
+        var div = $("#"+id).closest("div");
+        div.removeClass("has-success");       
+        $("glypcn"+id).remove();
+        div.addClass("has-error has-feedback")
+        div.append('<span id="glypcn'+id'" class="glyphicon glyphicon-remove form-control-feedback"></span>');
+        return false;
+      }
+      else
+      {
+        var div = $("#"+id).closest("div");
+        div.removeClass("has-error");
+        div.addClass("has-success has-feedback");
+        $("glypcn"+id).remove();
+        div.append('<span id="glypcn'+id'" class="glyphicon glyphicon-ok form-control-feedback"></span>');
+        return true;
+
+      }
+
+    }
+
+      $(document).ready(
+        function()
+        {
+          $("#contactbtn").click(function()
+          {
+            validateText("nameBT");
+
+          });
+        }
+
+        );
+    </script>
+
 
 </body>
 

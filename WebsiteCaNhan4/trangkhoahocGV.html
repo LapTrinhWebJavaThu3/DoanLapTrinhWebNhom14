@@ -290,7 +290,7 @@
 
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
-
+<!-- 
     <script>
       
     function validateText(id)
@@ -301,6 +301,45 @@
         var div = $("#"+id).closest("div");
         div.addClass("has-error");
         return false;
+      }
+
+    }
+
+      $(document).ready(
+        function()
+        {
+          $("#contactbtn").click(function()
+          {
+            validateText("contactHeading");
+
+          });
+        }
+
+        );
+    </script> -->
+    <script>
+  function validateText(id)
+    {
+  
+      
+      if($("#"+id).val() == null || $("#"+id).val() == "")
+      {
+        var div = $("#"+id).closest("div");
+        div.removeClass("has-success");       
+        $("glypcn"+id).remove();
+        div.addClass("has-error has-feedback")
+        div.append('<span id="glypcn'+id+'" class="glyphicon glyphicon-remove form-control-feedback"></span>');
+        return false;
+      }
+      else
+      {
+        var div = $("#"+id).closest("div");
+        div.removeClass("has-error");
+        div.addClass("has-success has-feedback");
+        $("glypcn"+id).remove();
+        div.append('<span id="glypcn'+id+'" class="glyphicon glyphicon-ok form-control-feedback"></span>');
+        return true;
+
       }
 
     }
